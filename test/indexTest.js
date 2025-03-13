@@ -47,3 +47,20 @@ describe("index.js", () => {
     });
   })
 })
+
+
+function saturdayFun(sport = "roller-skate") {
+  return `This Saturday, I want to ${sport}!`;
+}
+
+function mondayWork(defaultStatement = "go to the office") {
+  return `This Monday, I will ${defaultStatement}.`
+}
+console.log(mondayWork())
+
+function wrapAdjective(visualFlair= "*") {
+   return function (adjective = "special") {
+    return`You are ${visualFlair}${adjective}${visualFlair}!`;
+  }
+}
+console.log (wrapAdjective()()) 
